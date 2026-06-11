@@ -73,9 +73,25 @@
 }
 #nav{
   align-items: center;
+  background-color: rgb(222, 218, 210);
 }
 .c_card{
   min-width: 1650px;
   align-items: center;
   background-color: rgb(255, 254, 198);
+}
+.link{
+  text-decoration: none;
+  color: black;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  border-width: 6px;
+  border-color: black;
+}
+.link:hover {
+  font-size: 36px;
+  font-style: oblique;
 }

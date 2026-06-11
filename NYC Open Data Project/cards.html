@@ -10,46 +10,35 @@
       <hr>
       <br>
       <h1>School Violence Incidents</h1>
-            <div>
-                    <nav>
-                        <a href="index.html">Home</a>
-                        <a href="charts.html">Analysis</a>
-                    </nav>
-                </div>
       <hr>
+    <div id="nav">
+          <nav>
+              <a class="link" href="index.html">Home</a>
+              <a class="link" href="charts.html">Analysis</a>
+          </nav>
+      </div>
     </div>
 
     <div class="container">
       <div id="left">
         <h3 style="margin:5px;">Filter</h3>
         <hr>
+        <br>
         <div class="left">
           <h5>Filter by Address</h5>
           <input type="text" id="school" placeholder="Enter Address">
           <input type="button" onclick="FilterByAddress()" value="Search">
         </div>
+        <br>
         <hr>
+        <br>
         <div class="left">
           <h5>Filter by Number of Crimes</h5>
           <input type="text" id="crime" placeholder="Enter Number">
           <input type="button" onclick="FilterByCrime()" value="Search">
         </div>
         <hr>
-        <div class="left">
-          <h5>Filter by Crime Average</h5>
-          <input type="text" id="least" placeholder="Enter Lowest Crime Rate">
-          <br>
-          <input type="text" id="max" placeholder="Enter Highest Crime Rate">
-          <br>
-          <input type="button" onclick="FilterbyCrimAvg()" value="Search">
-        </div>
-        <hr>
-        <div class="left">
-          <h5>Filter by School</h5>
-          <input type="text" id="least" placeholder="Enter School Name">
-          <br>
-          <input type="button" onclick="FilterbySchool()" value="Search">
-        </div>
+        <p style="font-size: 12px;">70-02  54 AVENUE</p>
       </div>
       <div id="middle" class="card_container">
         <div>

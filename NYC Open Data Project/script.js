@@ -30,7 +30,7 @@ async function init(){
 }
 
 function FilterByAddress(){
-  let s = document.getElementById("school");
+  let s = document.getElementById("school").value;
   let output = document.getElementById("output");
   let search = document.getElementById("search");
 
@@ -59,65 +59,7 @@ function FilterByAddress(){
 }
 
 function FilterByCrime(){
-  let c = document.getElementById("crime");
-  let output = document.getElementById("output");
-  let search = document.getElementById("search");
-
-  let build = "";
-  let ct = 0;
-
-  for(let i = 0; i < data.length; i+=1){
-    let info = data[i];
-    if (info.nocrim_n == c){
-      build += `<div class="card">
-                   <h3>${info.location_name}</h3>
-                   <h3>Number of Schools at Location: ${info.schools}</h3>
-                   <h3>Schools in Building: ${info.schools_in_building}</h3>
-                   <h3>${info.address}</h3>
-                   <h3>${info.borough}</h3>
-                   <h3>District ${info.geographical_district_code}</h3>
-                   <hr>
-                   <h3>Average Number of Violent Incidents: ${info.avgofvio_n}</h3>
-                   <h3>Average Number of Crime: ${info.avgofnocrim_n}</h3>
-                  </div>`;
-      ct+=1;
-    }
-  }
-  search.innerHTML = `${ct} Results found.`;
-  output.innerHTML = build;
-}
-
-function FilterByCrimAvg(){
-  let c = document.getElementById("crime");
-  let output = document.getElementById("output");
-  let search = document.getElementById("search");
-
-  let build = "";
-  let ct = 0;
-
-  for(let i = 0; i < data.length; i+=1){
-    let info = data[i];
-    if (info.nocrim_n == c){
-      build += `<div class="card">
-                   <h3>${info.location_name}</h3>
-                   <h3>Number of Schools at Location: ${info.schools}</h3>
-                   <h3>Schools in Building: ${info.schools_in_building}</h3>
-                   <h3>${info.address}</h3>
-                   <h3>${info.borough}</h3>
-                   <h3>District ${info.geographical_district_code}</h3>
-                   <hr>
-                   <h3>Average Number of Violent Incidents: ${info.avgofvio_n}</h3>
-                   <h3>Average Number of Crime: ${info.avgofnocrim_n}</h3>
-                  </div>`;
-      ct+=1;
-    }
-  }
-  search.innerHTML = `${ct} Results found.`;
-  output.innerHTML = build;
-}
-
-function FilterBySchool(){
-  let c = document.getElementById("crime");
+  let c = document.getElementById("crime").value;
   let output = document.getElementById("output");
   let search = document.getElementById("search");
 
